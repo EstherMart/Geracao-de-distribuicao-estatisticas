@@ -3,30 +3,3 @@ Usa o número de euler
 Pelo visto tem funções que podem autogerar números de exemplo(macedo falou que vai apresentar depois)
 Por x minutos, um evento tem a chance de ocorrer y vezes a cada z segundos.
 Copiar a fórmula depois  
-A distribuição parece ser separada da parte de operações
-(Como se fosse fazer uma calculadora junto a criação da distribuição probabilistica)
-
-Gera primeiro as distribuições, depois aplica as ações da ''calculadora''(variancia e media) nos valores da distribuição
-
-Ex de aplicação: 
-Claro! A distribuição exponencial é frequentemente usada para modelar o tempo entre eventos em um processo de Poisson. Aqui está um exemplo simples:
-Imagine que você está interessado no tempo que um celular vai durar antes de falhar. Suponha que a vida útil média do celular seja de 2 anos. Podemos modelar essa situação usando uma distribuição exponencial com uma taxa de falha média de λ=1/2​
- por ano.
-A função de densidade de probabilidade (PDF) para a distribuição exponencial é dada por:
-f(x;λ)=λe^−λx
-Para o nosso exemplo, a função seria:
-f(x;1/2)=(1/2)*e^(−1/2​*x)
-Se quisermos calcular a probabilidade de que o celular dure mais de 3 anos, usamos a função de distribuição acumulada (CDF):
-F(x;λ)=1−e^(−λx)
-Para o nosso exemplo:
-F(3;21​)=1−e^−((1/2)*3)=1−e^(−1.5)≈0.7769
-Portanto, a probabilidade de que o celular dure mais de 3 anos é aproximadamente 0.2231 (ou 22.31%).
-Se precisar de mais detalhes ou tiver outra pergunta, estou aqui para ajudar!
-
-Esse trambolho : λ é a taxa de falha média, que é o inverso do tempo médio entre eventos.
-E o x é o tempo total da amostra que se deseja avaliar
-
-  private double desvioPadraoAmostral;  
-Fontes: 
-https://stackoverflow.com/questions/2106503/pseudorandom-number-generator-exponential-distribution
-https://medium.com/@flaviagaia/um-guia-para-distribui%C3%A7%C3%B5es-de-probabilidade-bernoulli-binomial-poisson-exponencial-normal-e-22354aa77898#:~:text=A%20distribui%C3%A7%C3%A3o%20exponencial%20%C3%A9%20uma%20distribui%C3%A7%C3%A3o%20cont%C3%ADnua%20de,confi%C3%A1veis%20ou%20o%20tempo%20entre%20chegadas%20em%20filas.
