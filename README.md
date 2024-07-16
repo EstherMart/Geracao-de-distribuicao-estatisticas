@@ -17,7 +17,7 @@ o programa é capaz de manipular os seguintes tipos de distribuição:
 
 # Informações Técnicas
 ## Requisitos Obrigatórios
-O projeto utiliza conceitos relacionados à Programação Orientada a Objetos em Java.
+O projeto utiliza conceitos relacionados à Programação Orientada a Objetos em Java. Abaixo, é apresentado as principais definições utilizadas no código.
 
 ### Classes
 Utilização de classes abstratas (`Distribuicao`) e classes concretas (`DistribuicaoNormal, DistribuicaoExponencial, DistribuicaoUniforme, DistribuicaoPoisson`).
