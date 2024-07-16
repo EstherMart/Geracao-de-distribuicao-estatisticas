@@ -1,1 +1,1 @@
-# Geracao-de-distribuicao-estatisticas
+# Geração de Distribuição Estatística
