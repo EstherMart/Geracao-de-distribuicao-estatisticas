@@ -12,7 +12,16 @@ o programa é capaz de manipular os seguintes tipos de distribuição:
 - Uniforme
 
 # Informações Técnicas
+## Requisitos Obrigatórios
+O projeto utiliza conceitos relacionados à:
+- Herança
+- Classes
+- Polimorfismo
+- Generics
+- Classe main padrão
 
+## Requisitos Adicionais
+- Tratamento de entrada de dados
 
 ## Output
 O código imprime cada valor da distribuição em uma lista de números, separados por vírgula, como saída.
