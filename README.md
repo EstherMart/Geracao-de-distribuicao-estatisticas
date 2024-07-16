@@ -1,7 +1,8 @@
 # Geração de Distribuição Estatística
 
 <p align="justify">
-Aplicação desenvolvida pelos discentes: Luiza Esther Martins Pessoa, Lucas Pinheiro da Costa e Maria Luiza Felipe Carolino do terceiro semestre do curso de Ciência da Computação pela Universidade Federal do Ceará (UFC).
+Aplicação desenvolvida pelos discentes do terceiro semestre do curso de Ciência da Computação pela Universidade Federal do Ceará (UFC): Luiza Esther Martins Pessoa, Lucas Pinheiro da Costa e Maria Luiza Felipe Carolino.  
+
 O objetivo deste repositório é armazenar o código fonte do primeiro trabalho prático da disciplina de Técnicas de Programação. O projeto é totalmente desenvolvido em Java e permite a manipulação de diferentes tipos de distribuições estatísticas, sendo capaz de calcular
 parâmetros básicos como média, variância e desvio padrão.
 
