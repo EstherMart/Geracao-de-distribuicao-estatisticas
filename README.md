@@ -17,17 +17,22 @@ o programa é capaz de manipular os seguintes tipos de distribuição:
 
 # Informações Técnicas
 ## Requisitos Obrigatórios
-O projeto utiliza conceitos relacionados à:
-- Classes
-  - Classes abstratas (`Distribuicao`) e classes concretas (`DistribuicaoNormal, DistribuicaoExponencial, DistribuicaoUniforme, DistribuicaoPoisson`).
-- Herança
-  - Utilizada na definição de métodos abstratos da classe `Distribuicao` para geração de valores e cálculo de parâmetros, fazendo com que as classes concretas herdem tais aplicações.
-- Polimorfismo
-  - As classes concretas implementam os métodos definidos na classe abstrata.
-- Generics
-  - Utilizado para permitir operações sobre diferentes tipos de distribuições sem depender de um tipo específico.
-- Classe main padrão
-  - Classe padronizada disponibilizada pelo docente.
+O projeto utiliza conceitos relacionados à Programação Orientada a Objetos em Java.
+
+### Classes
+Utilização de classes abstratas (`Distribuicao`) e classes concretas (`DistribuicaoNormal, DistribuicaoExponencial, DistribuicaoUniforme, DistribuicaoPoisson`).
+
+### Herança
+Utilizada na definição de métodos abstratos da classe `Distribuicao` para geração de valores e cálculo de parâmetros, fazendo com que as classes concretas herdem tais aplicações.
+
+### Polimorfismo
+As classes concretas implementam os métodos definidos na classe abstrata e permite o uso polimórfico das distribuições.
+
+### Generics
+Utilizado para permitir operações sobre diferentes tipos de distribuições sem depender de um tipo específico.
+
+### Classe main padrão
+Classe padronizada disponibilizada pelo docente e que, obrigatoriamente, deve ser executada com sucesso para fins avaliativos.
 
 ## Requisitos Adicionais
 - Tratamento de entrada de dados
