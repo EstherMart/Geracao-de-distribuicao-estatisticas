@@ -5,3 +5,5 @@ Por x minutos, um evento tem a chance de ocorrer y vezes a cada z segundos.
 Copiar a fórmula depois  
 A distribuição parece ser separada da parte de operações
 (Como se fosse fazer uma calculadora junto a criação da distribuição probabilistica)
+
+Gera primeiro as distribuições, depois aplica as ações da ''calculadora''(variancia e media) nos valores da distribuição
