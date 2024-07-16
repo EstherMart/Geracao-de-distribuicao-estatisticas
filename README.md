@@ -15,7 +15,8 @@ o programa é capaz de manipular os seguintes tipos de distribuição:
 
 
 ## Output
-O output 
+O código imprime cada valor da distribuição em uma lista de números, separados por vírgula, como saída.
+
 
 
 
