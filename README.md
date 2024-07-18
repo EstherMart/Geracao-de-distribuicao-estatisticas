@@ -34,15 +34,16 @@ Utilizado para permitir operações sobre diferentes tipos de distribuições se
 ### Classe Main padrão
 Classe padronizada disponibilizada pelo docente e que, obrigatoriamente, deve ser executada com sucesso para fins avaliativos.
 
-## Requisitos Adicionais
-- Tratamento de entrada de dados
-
-## Output
+### Output
 O código imprime cada valor da distribuição em uma lista de números, separados por vírgula, como saída.
+
+## Adicionais Implementados
+- Tratamento de entrada de dados
 
 # Demonstração da aplicação
 <Vídeo>
 
-
+# Documentação dos requisitos do projeto
+[Documentação - AP1](
 
 </p>
