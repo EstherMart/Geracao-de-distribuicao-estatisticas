@@ -31,7 +31,7 @@ As classes concretas implementam os métodos definidos na classe abstrata e perm
 ### Generics
 Utilizado para permitir operações sobre diferentes tipos de distribuições sem depender de um tipo específico.
 
-### Classe main padrão
+### Classe Main padrão
 Classe padronizada disponibilizada pelo docente e que, obrigatoriamente, deve ser executada com sucesso para fins avaliativos.
 
 ## Requisitos Adicionais
