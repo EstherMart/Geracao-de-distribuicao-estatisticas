@@ -44,6 +44,6 @@ O código imprime cada valor da distribuição em uma lista de números, separad
 <Vídeo>
 
 # Documentação dos requisitos do projeto
-[Documentação - AP1](
+[Documentação - AP1](https://github.com/EstherMart/Geracao-de-distribuicao-estatisticas/blob/main/2024%20CK%200235%20Avalia%C3%A7%C3%A3o%201.pdf)
 
 </p>
