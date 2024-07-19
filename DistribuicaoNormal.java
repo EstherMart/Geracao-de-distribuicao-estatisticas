@@ -7,17 +7,18 @@ public class DistribuicaoNormal extends Distribuicao {
     private double variancia;
     private double desvioPadrao;
     private List<Double> valores;
+    private double mediaAmostral;
+    private double desvioPadraoAmostral;
 
     Random random = new Random();
 
-    public DistribuicaoNormal(double media, double variancia) {
-        this.media = media;
-        this.variancia = variancia;
-        this.desvioPadrao = Math.sqrt(variancia);
+    public DistribuicaoNormal(double mediaAmostral, double varianciaAmostral) {
+        this.mediaAmostral = mediaAmostral;
+        desvioPadraoAmostral = Math.sqrt(varianciaAmostral);
     }
 
     public double gerarValor (){
-        return (media + desvioPadrao * gerarBoxMuller());
+        return (mediaAmostral + desvioPadraoAmostral * gerarBoxMuller());
     }
 
     @Override
@@ -32,21 +33,24 @@ public class DistribuicaoNormal extends Distribuicao {
 
     @Override
     public double gerarMedia() {
-        double soma_valores = somar_valores(this.valores);
-        return soma_valores / this.valores.size();
+        double soma_valores = somar_valores(valores);
+        media = soma_valores / valores.size();
+        return media;
     }
 
     @Override
     public double gerarVariancia() {
-        double media = gerarMedia();
-        double soma_quadrados = somar_quadrados(this.valores, media);
+        media = gerarMedia();
+        double soma_quadrados = somar_quadrados(valores, media);
         System.out.println(soma_quadrados);
-        return soma_quadrados / this.valores.size();
+        variancia = soma_quadrados / (valores.size()-1);
+        return variancia;
     }
 
     @Override
     public double gerarDesvioPadrao() {
-        return Math.sqrt(gerarVariancia());
+        desvioPadrao = Math.sqrt(gerarVariancia());
+        return desvioPadrao;
     }
 
     public double gerarBoxMuller() {
@@ -70,8 +74,4 @@ public class DistribuicaoNormal extends Distribuicao {
         }
         return soma;
     }
-
-    
-
-
 }
