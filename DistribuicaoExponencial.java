@@ -3,40 +3,21 @@ import java.util.List;
 import java.util.Random;
 
 public class DistribuicaoExponencial extends Distribuicao {
-    private double lambda;
-    private Random random;
+   private double media;
+    private double variancia;
+    private double desvioPadrao;
+    private List<Double> valores;
+    private double mediaAmostral;
+    private double desvioPadraoAmostral;
+  private double lambda
 
-    public DistribuicaoExponencial(double lambda) {
-        if (lambda <= 0) {
-            throw new IllegalArgumentException("Lambda tem que ser maior que 0");
-        }
-        this.lambda = lambda;
-        this.random = new Random();
+    Random random = new Random();
+
+    public DistribuicaoNormal(double mediaAmostral, double varianciaAmostral) {
+        this.mediaAmostral = mediaAmostral;
+        desvioPadraoAmostral = Math.sqrt(varianciaAmostral);
     }
 
-    @Override
-    public double gerarMedia() {
-        return 1 / lambda;
+    public double gerarValor (){
+        return (mediaAmostral + desvioPadraoAmostral * gerarBoxMuller());
     }
-
-    @Override
-    public double gerarVariancia() {
-        return 1 / (lambda * lambda);
-    }
-
-    @Override
-    public double gerarDesvioPadrao() {
-        return Math.sqrt(gerarVariancia());
-    }
-
-    @Override
-    public List<Double> gerarValores(int n) {
-        List<Double> valores = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            double u = random.nextDouble();
-            double valor = -Math.log(1 - u) / lambda;
-            valores.add(valor);
-        }
-        return valores;
-    }
-}
