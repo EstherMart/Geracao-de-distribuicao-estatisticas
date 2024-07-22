@@ -9,7 +9,7 @@ public class DistribuicaoExponencial extends Distribuicao {
     private List<Double> valores;
     private double mediaAmostral;
     private double desvioPadraoAmostral;
-  private double lambda
+  private double lambda;
 
     Random random = new Random();
 
