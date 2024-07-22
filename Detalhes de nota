@@ -25,3 +25,8 @@ Se precisar de mais detalhes ou tiver outra pergunta, estou aqui para ajudar!
 
 Esse trambolho : λ é a taxa de falha média, que é o inverso do tempo médio entre eventos.
 E o x é o tempo total da amostra que se deseja avaliar
+
+  private double desvioPadraoAmostral;  
+Fontes: 
+https://stackoverflow.com/questions/2106503/pseudorandom-number-generator-exponential-distribution
+https://medium.com/@flaviagaia/um-guia-para-distribui%C3%A7%C3%B5es-de-probabilidade-bernoulli-binomial-poisson-exponencial-normal-e-22354aa77898#:~:text=A%20distribui%C3%A7%C3%A3o%20exponencial%20%C3%A9%20uma%20distribui%C3%A7%C3%A3o%20cont%C3%ADnua%20de,confi%C3%A1veis%20ou%20o%20tempo%20entre%20chegadas%20em%20filas.
