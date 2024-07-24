@@ -27,7 +27,6 @@ public class DistribuicaoNormal extends Distribuicao {
         for (int i = 0; i < n; i++) {
             valores.add(gerarValor());
         }
-        System.out.println(valores);
         return valores;
     }
 
@@ -42,7 +41,6 @@ public class DistribuicaoNormal extends Distribuicao {
     public double gerarVariancia() {
         media = gerarMedia();
         double soma_quadrados = somar_quadrados(valores, media);
-        System.out.println(soma_quadrados);
         variancia = soma_quadrados / (valores.size()-1);
         return variancia;
     }

@@ -1,0 +1,9 @@
+*.class
+
+bin/
+temp/
+*.log
+*.tmp
+*.bak
+
+
