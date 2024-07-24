@@ -10,7 +10,6 @@ public class Main {
         estatisticasNormal.imprimirValoresGerados(100);
         estatisticasNormal.imprimirMedia();
         estatisticasNormal.imprimirVariancia();
-        System.out.println("oiee");
 
     }
 }
