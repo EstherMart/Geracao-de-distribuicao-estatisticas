@@ -7,7 +7,7 @@ public class Main {
         Estatisticas<DistribuicaoNormal> estatisticasNormal = new Estatisticas<>(distribuicaoNormal);
 
         System.out.println("Distribuição Normal:");
-        estatisticasNormal.imprimirValoresGerados(100);
+        estatisticasNormal.imprimirValoresGerados(5);
         estatisticasNormal.imprimirMedia();
         estatisticasNormal.imprimirVariancia();
 
@@ -15,9 +15,21 @@ public class Main {
         Estatisticas<DistribuicaoUniforme> estatisticasUniforme = new Estatisticas<>(distribuicaoUniforme);
 
         System.out.println("\nDistribuição Uniforme:");
-        estatisticasUniforme.imprimirValoresGerados(100);
+        estatisticasUniforme.imprimirValoresGerados(5);
         estatisticasUniforme.imprimirMedia();
         estatisticasUniforme.imprimirVariancia();
+
+        /*System.out.println("\nDistribuição Exponencial:");
+        estatisticasExponencial.imprimirValoresGerados(5);
+        estatisticasExponencial.imprimirMedia();
+        estatisticasExponencial.imprimirVariancia();
+
+        System.out.println("\nDistribuição Poisson:");
+        estatisticasPoisson.imprimirValoresGerados(5);
+        estatisticasPoisson.imprimirMedia();
+        estatisticasPoisson.imprimirVariancia();*/
+
+
     }
 }
 
