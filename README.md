@@ -42,7 +42,6 @@ O código imprime cada valor da distribuição em uma lista de números, separad
 
 ## Adicionais Implementados
 - Tratamento de entrada de exceção de entrada e saída de dados
-- Interface
 
 # Demonstração da aplicação
 <Vídeo>
