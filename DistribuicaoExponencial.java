@@ -13,22 +13,21 @@ public class DistribuicaoExponencial extends Distribuicao {
         this.lambda = lambda;
         this.random = new Random();
     }
-
-    @Override
-    public double gerarMedia() {
-        return 1 / lambda;
-    }
-
     @Override
     public double gerarVariancia() {
         return 1 / (lambda * lambda);
     }
 
-    @Override
+     @Override
     public double gerarDesvioPadrao() {
         return Math.sqrt(gerarVariancia());
     }
+    @Override
+    public double gerarMedia() {
+        return 1 / lambda;
+    }
 
+    
     @Override
     public List<Double> gerarValores(int n) {
         List<Double> valores = new ArrayList<>();
