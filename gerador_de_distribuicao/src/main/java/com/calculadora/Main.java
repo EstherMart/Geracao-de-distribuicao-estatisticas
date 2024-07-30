@@ -38,5 +38,18 @@ public class Main {
         estatisticasPoisson.imprimirMedia();
         estatisticasPoisson.imprimirVariancia();
         // estatisticasPoisson.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
+
+        List<Double> valores1 = estatisticasNormal.getValores();
+        List<Double> valores2 = estatisticasNormal.getValores();
+        List<Double> valores3 = estatisticasNormal.getValores();
+        List<Double> valores4 = estatisticasNormal.getValores();
+
+        double[] valoresVetor1 = valores1.stream().mapToDouble(Double::doubleValue).toArray();
+        double[] valoresVetor2 = valores2.stream().mapToDouble(Double::doubleValue).toArray();
+        double[] valoresVetor3 = valores3.stream().mapToDouble(Double::doubleValue).toArray();
+        double[] valoresVetor4 = valores4.stream().mapToDouble(Double::doubleValue).toArray();
+
+        JFrame janelaPrincipal = JanelaPrincipal.CriarJanelaPrincipal(valoresVetor1, valoresVetor2, valoresVetor3, valoresVetor4);
+        janelaPrincipal.setVisible(true);
     }
 }
