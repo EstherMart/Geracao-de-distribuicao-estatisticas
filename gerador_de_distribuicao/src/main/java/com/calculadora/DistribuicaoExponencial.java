@@ -1,3 +1,5 @@
+package com.calculadora;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -5,6 +7,10 @@ import java.util.Random;
 public class DistribuicaoExponencial extends Distribuicao {
     private double lambda;
     private Random random;
+
+    public List<Double> getValores() {
+        return null;
+    }
 
     public DistribuicaoExponencial(double lambda) {
         if (lambda <= 0) {

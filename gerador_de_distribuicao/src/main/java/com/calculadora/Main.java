@@ -1,7 +1,10 @@
+package com.calculadora;
+import java.util.List;
+
+import javax.swing.JFrame;
+
 public class Main {
-
     public static void main(String[] args) {
-
         DistribuicaoNormal distribuicaoNormal = new DistribuicaoNormal(0, 1);
         DistribuicaoUniforme distribuicaoUniforme = new DistribuicaoUniforme(0, 1);
         DistribuicaoExponencial distribuicaoExponencial = new DistribuicaoExponencial(1);
@@ -16,24 +19,36 @@ public class Main {
         estatisticasNormal.imprimirValoresGerados(5);
         estatisticasNormal.imprimirMedia();
         estatisticasNormal.imprimirVariancia();
-        estatisticasNormal.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
-
+        estatisticasNormal.imprimirDesvioPadrao();
         System.out.println("\nDistribuição Uniforme:");
-        estatisticasUniforme.imprimirValoresGerados(5);
+        estatisticasUniforme.imprimirValoresGerados(1);
         estatisticasUniforme.imprimirMedia();
         estatisticasUniforme.imprimirVariancia();
         estatisticasUniforme.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
 
         System.out.println("\nDistribuição Exponencial:");
-        estatisticasExponencial.imprimirValoresGerados(5);
+        estatisticasExponencial.imprimirValoresGerados(1);
         estatisticasExponencial.imprimirMedia();
         estatisticasExponencial.imprimirVariancia();
         estatisticasExponencial.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
 
         System.out.println("\nDistribuição Poisson:");
-        estatisticasPoisson.imprimirValoresGerados(5);
+        estatisticasPoisson.imprimirValoresGerados(1000000);
         estatisticasPoisson.imprimirMedia();
         estatisticasPoisson.imprimirVariancia();
-        estatisticasPoisson.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
+        estatisticasPoisson.imprimirDesvioPadrao(); 
+
+        List<Double> valores1 = estatisticasNormal.getValores();
+        List<Double> valores2 = estatisticasNormal.getValores();
+        List<Double> valores3 = estatisticasNormal.getValores();
+        List<Double> valores4 = estatisticasNormal.getValores();
+        double[] valoresArray1 = valores1.stream().mapToDouble(Double::doubleValue).toArray();
+        double[] valoresArray2 = valores2.stream().mapToDouble(Double::doubleValue).toArray();
+        double[] valoresArray3 = valores3.stream().mapToDouble(Double::doubleValue).toArray();
+        double[] valoresArray4 = valores4.stream().mapToDouble(Double::doubleValue).toArray();
+        
+        JFrame janelaPrincipal = JanelaPrincipal.CriarJanelaPrincipal(valoresArray1, valoresArray2, valoresArray3, valoresArray4);
+        janelaPrincipal.setVisible(true);
+        
     }
 }

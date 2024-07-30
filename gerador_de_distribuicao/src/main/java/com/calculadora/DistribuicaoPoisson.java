@@ -1,3 +1,5 @@
+package com.calculadora;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -6,6 +8,10 @@ public class DistribuicaoPoisson extends Distribuicao {
     
     private double lambda;
     private Random random = new Random();
+
+    public List<Double> getValores() {
+        return null;
+    }
 
     // Construtor com validação para lambda
     public DistribuicaoPoisson(double lambda) {

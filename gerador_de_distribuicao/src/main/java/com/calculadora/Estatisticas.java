@@ -1,3 +1,7 @@
+package com.calculadora;
+
+import java.util.List;
+
 public class Estatisticas<T extends Distribuicao> {
     private T tipoDeDistribuicao;
 
@@ -19,6 +23,10 @@ public class Estatisticas<T extends Distribuicao> {
 
     public void imprimirDesvioPadrao() {
         System.out.println(tipoDeDistribuicao.gerarDesvioPadrao());
+    }
+
+    public List<Double> getValores() {
+        return tipoDeDistribuicao.getValores();
     }
 }
 

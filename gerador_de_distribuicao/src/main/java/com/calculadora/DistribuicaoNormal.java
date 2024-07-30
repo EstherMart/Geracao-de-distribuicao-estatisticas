@@ -1,3 +1,5 @@
+package com.calculadora;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -12,6 +14,10 @@ public class DistribuicaoNormal extends Distribuicao {
 
     Random random = new Random();
 
+    public List<Double> getValores() {
+        return valores;
+    }
+    
     public DistribuicaoNormal(double mediaAmostral, double varianciaAmostral) {
         this.mediaAmostral = mediaAmostral;
         desvioPadraoAmostral = Math.sqrt(varianciaAmostral);
