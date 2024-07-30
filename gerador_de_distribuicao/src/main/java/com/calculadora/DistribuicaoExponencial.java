@@ -7,9 +7,10 @@ import java.util.Random;
 public class DistribuicaoExponencial extends Distribuicao {
     private double lambda;
     private Random random;
+    private List<Double> valores;
 
     public List<Double> getValores() {
-        return null;
+        return valores;
     }
 
     public DistribuicaoExponencial(double lambda) {
@@ -38,12 +39,12 @@ public class DistribuicaoExponencial extends Distribuicao {
 
     @Override
     public List<Double> gerarValores(int n) {
-        List<Double> valor = new ArrayList<>();
+        valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             double u = random.nextDouble();
-            double valores = -Math.log(1 - u) / lambda;
-            valor.add(valores);
+            double valor = -Math.log(1 - u) / lambda;
+            valores.add(valor);
         }
-        return valor;
+        return valores;
     }
 }

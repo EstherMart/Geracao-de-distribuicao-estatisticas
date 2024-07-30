@@ -9,9 +9,9 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.statistics.HistogramDataset;
 
 public class GraficoDistribuicao extends javax.swing.JFrame {
-    
+    private String titulo;
     public GraficoDistribuicao(String titulo, double[] valores) {
-        super(titulo);
+        this.titulo = titulo;
         JFreeChart grafico = criarGrafico(criarConjuntoDados(valores));
         ChartPanel painelGrafico = new ChartPanel(grafico);
         painelGrafico.setPreferredSize(new java.awt.Dimension(800, 600));
@@ -26,7 +26,7 @@ public class GraficoDistribuicao extends javax.swing.JFrame {
 
     private JFreeChart criarGrafico(HistogramDataset conjuntoDados) {
         JFreeChart grafico = ChartFactory.createHistogram(
-                "Distribuição Normal",
+                titulo,
                 "Valor",
                 "Frequência",
                 conjuntoDados,

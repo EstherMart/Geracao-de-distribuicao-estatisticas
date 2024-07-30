@@ -40,9 +40,9 @@ public class Main {
         // estatisticasPoisson.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
 
         List<Double> valores1 = estatisticasNormal.getValores();
-        List<Double> valores2 = estatisticasNormal.getValores();
-        List<Double> valores3 = estatisticasNormal.getValores();
-        List<Double> valores4 = estatisticasNormal.getValores();
+        List<Double> valores2 = estatisticasUniforme.getValores();
+        List<Double> valores3 = estatisticasExponencial.getValores();
+        List<Double> valores4 = estatisticasPoisson.getValores();
 
         double[] valoresVetor1 = valores1.stream().mapToDouble(Double::doubleValue).toArray();
         double[] valoresVetor2 = valores2.stream().mapToDouble(Double::doubleValue).toArray();

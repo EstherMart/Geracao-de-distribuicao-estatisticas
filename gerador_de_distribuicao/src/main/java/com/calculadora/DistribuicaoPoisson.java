@@ -8,9 +8,10 @@ public class DistribuicaoPoisson extends Distribuicao {
     
     private double lambda;
     private Random random = new Random();
+    private List<Double> valores;
 
     public List<Double> getValores() {
-        return null;
+        return valores;
     }
 
     // Construtor com validação para lambda
@@ -42,7 +43,7 @@ public class DistribuicaoPoisson extends Distribuicao {
 
     @Override
     public List<Double> gerarValores(int n) {
-        List<Double> valores = new ArrayList<>();
+        valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             valores.add((double) gerarPoisson(lambda));
         }
