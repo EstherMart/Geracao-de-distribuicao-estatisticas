@@ -16,7 +16,7 @@ public class DistribuicaoPoisson extends Distribuicao {
     // Construtor com validação para lambda
     public DistribuicaoPoisson(double lambda) {
         if (lambda <= 0) {
-            throw new IllegalArgumentException("O valor de lambda deve ser maior que 0.");
+            throw new IllegalArgumentException("O valor de lambda deve ser diferente de 0.");
         }
         this.lambda = lambda;
     }
