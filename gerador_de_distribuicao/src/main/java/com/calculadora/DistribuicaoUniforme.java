@@ -12,6 +12,9 @@ public class DistribuicaoUniforme extends Distribuicao {
         if (minimo >= maximo) {
             throw new IllegalArgumentException("O valor mínimo tem que ser menor que o valor máximo");
         }
+        if (minimo >= maximo) {
+            throw new IllegalArgumentException("O valor mínimo tem que ser menor que o valor máximo");
+        }
         this.minimo = minimo;
         this.maximo = maximo;
     }
