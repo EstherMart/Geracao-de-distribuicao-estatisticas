@@ -47,6 +47,9 @@ public class DistribuicaoNormal extends Distribuicao {
         if (valores == null || valores.isEmpty()) {
             throw new IllegalStateException("A lista de valores está vazia");
         }
+        if (somar_valores(valores) == 0) {
+            throw new IllegalStateException("A soma dos valores é zero");
+        }
         double soma_valores = somar_valores(valores);
         media = soma_valores / valores.size();
         return media;
@@ -65,7 +68,13 @@ public class DistribuicaoNormal extends Distribuicao {
 
     @Override
     public double gerarDesvioPadrao() {
+        if (valores == null || valores.isEmpty()) {
+            throw new IllegalStateException("A lista de valores está vazia");
+        }
         desvioPadrao = Math.sqrt(gerarVariancia());
+        if (variancia == 0) {
+            throw new IllegalStateException("A variância é zero, não é possível calcular o desvio padrão");
+        }
         return desvioPadrao;
     }
 
