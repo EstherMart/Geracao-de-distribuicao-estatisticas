@@ -22,19 +22,19 @@ public class Main {
         // estatisticasNormal.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
 
         System.out.println("\nDistribuição Uniforme:");
-        estatisticasUniforme.imprimirValoresGerados(1);
+        estatisticasUniforme.imprimirValoresGerados(5);
         estatisticasUniforme.imprimirMedia();
         estatisticasUniforme.imprimirVariancia();
         // estatisticasUniforme.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
 
         System.out.println("\nDistribuição Exponencial:");
-        estatisticasExponencial.imprimirValoresGerados(1);
+        estatisticasExponencial.imprimirValoresGerados(5);
         estatisticasExponencial.imprimirMedia();
         estatisticasExponencial.imprimirVariancia();
         // estatisticasExponencial.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
 
         System.out.println("\nDistribuição Poisson:");
-        estatisticasPoisson.imprimirValoresGerados(1000000);
+        estatisticasPoisson.imprimirValoresGerados(5);
         estatisticasPoisson.imprimirMedia();
         estatisticasPoisson.imprimirVariancia();
         // estatisticasPoisson.imprimirDesvioPadrao(); // Adicionado devido especificação do projeto
