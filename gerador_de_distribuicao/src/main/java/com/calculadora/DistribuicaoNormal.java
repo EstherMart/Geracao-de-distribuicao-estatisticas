@@ -19,16 +19,22 @@ public class DistribuicaoNormal extends Distribuicao {
     }
     
     public DistribuicaoNormal(double mediaAmostral, double varianciaAmostral) {
+        if (varianciaAmostral < 0) {
+            throw new IllegalArgumentException("Variância amostral não pode ser negativa");
+        }
         this.mediaAmostral = mediaAmostral;
         desvioPadraoAmostral = Math.sqrt(varianciaAmostral);
     }
 
-    public double gerarValor (){
+    public double gerarValor() {
         return (mediaAmostral + desvioPadraoAmostral * gerarBoxMuller());
     }
 
     @Override
     public List<Double> gerarValores(int n) {
+        if (n <= 0) {
+            throw new IllegalArgumentException("O número de valores a serem gerados deve maior que 0");
+        }
         valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             valores.add(gerarValor());
@@ -38,6 +44,9 @@ public class DistribuicaoNormal extends Distribuicao {
 
     @Override
     public double gerarMedia() {
+        if (valores == null || valores.isEmpty()) {
+            throw new IllegalStateException("A lista de valores está vazia");
+        }
         double soma_valores = somar_valores(valores);
         media = soma_valores / valores.size();
         return media;
@@ -45,9 +54,12 @@ public class DistribuicaoNormal extends Distribuicao {
 
     @Override
     public double gerarVariancia() {
+        if (valores == null || valores.isEmpty()) {
+            throw new IllegalStateException("A lista de valores está vazia");
+        }
         media = gerarMedia();
         double soma_quadrados = somar_quadrados(valores, media);
-        variancia = soma_quadrados / (valores.size()-1);
+        variancia = soma_quadrados / (valores.size() - 1);
         return variancia;
     }
 
@@ -74,7 +86,7 @@ public class DistribuicaoNormal extends Distribuicao {
     private double somar_quadrados(List<Double> valores, double media) {
         double soma = 0;
         for (double valor : valores) {
-            soma += Math.pow(valor-media, 2);
+            soma += Math.pow(valor - media, 2);
         }
         return soma;
     }
