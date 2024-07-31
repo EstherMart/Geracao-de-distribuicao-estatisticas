@@ -16,6 +16,24 @@ o programa é capaz de manipular os seguintes tipos de distribuição:
 - Uniforme
 
 # Informações Técnicas
+## Instruções para teste
+
+### Pré-requisitos:
+- Java Development Kit (JDK)
+- Apache Maven [Guia de instalação](https://maven.apache.org/install.html) (caso escolha rodar o proejeto em um IDE que tenha suporte, ele não é necessário)
+### Rodando diretamente pelo Maven:
+
+```bash
+cd gerador_de_distribuicao
+mvn exec:java -Dexec.mainClass="com.calculadora.Main"
+```
+### Gerando o arquivo .jar:
+```bash
+cd gerador_de_distribuicao
+mvn compile
+mvn package
+```
+
 ## Documentação dos requisitos do projeto
 [Documentação - AP1](https://github.com/EstherMart/Geracao-de-distribuicao-estatisticas/blob/main/2024%20CK%200235%20Avalia%C3%A7%C3%A3o%201.pdf)
 
