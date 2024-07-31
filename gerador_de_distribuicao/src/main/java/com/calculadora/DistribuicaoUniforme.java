@@ -8,12 +8,8 @@ public class DistribuicaoUniforme extends Distribuicao {
     private List<Double> valores;
     private Random random;
 
-    Random random = new Random();
 
     public DistribuicaoUniforme(double minimo, double maximo) {
-        if (minimo >= maximo) {
-            throw new IllegalArgumentException("O valor mínimo tem que ser menor que o valor máximo");
-        }
         if (minimo >= maximo) {
             throw new IllegalArgumentException("O valor mínimo tem que ser menor que o valor máximo");
         }
