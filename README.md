@@ -19,8 +19,13 @@ o programa é capaz de manipular os seguintes tipos de distribuição:
 ## Instruções para teste
 
 ### Pré-requisitos:
-- Java Development Kit (JDK)
-- Apache Maven [Guia de instalação](https://maven.apache.org/install.html) (caso escolha rodar o projeto em uma IDE que tenha suporte ele não é necessário)
+- Java Development Kit (JDK).
+- Apache Maven [Guia de instalação](https://maven.apache.org/install.html) (caso escolha rodar o projeto em uma IDE que tenha suporte ele não é necessário).
+
+### Rodando pela IDE:
+
+- Nesse caso as instruções são variáveis e podem ser encontradas na documentação oficial de cada uma.
+
 ### Rodando diretamente pelo Maven:
 
 ```bash
