@@ -6,7 +6,7 @@ Aplicação desenvolvida pelos discentes do terceiro semestre do curso de Ciênc
 O objetivo deste repositório é armazenar o código fonte do trabalho prático da disciplina de Técnicas de Programação. O projeto é totalmente desenvolvido em Java e permite a manipulação de diferentes tipos de distribuições estatísticas, sendo capaz de calcular
 parâmetros básicos como média, variância e desvio padrão.
 
-Acesse o <relatório do projeto> com informações relacionadas as escolhas de design e a implementação.
+Acesse o [Relatório do Projeto](https://github.com/EstherMart/Geracao-de-distribuicao-estatisticas/blob/main/2024%20CK%200235%20Avalia%C3%A7%C3%A3o%201.pdf) com informações relacionadas as escolhas de design e a implementação.
 
 # Tipos de Distribuições Estatísticas
 o programa é capaz de manipular os seguintes tipos de distribuição:
