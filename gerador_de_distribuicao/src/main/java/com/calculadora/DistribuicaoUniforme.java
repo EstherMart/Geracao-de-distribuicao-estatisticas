@@ -1,6 +1,8 @@
+package com.calculadora;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
 
 public class DistribuicaoUniforme extends Distribuicao {
     private double minimo;
@@ -8,6 +10,9 @@ public class DistribuicaoUniforme extends Distribuicao {
     private List<Double> valores;
 
     Random random = new Random();
+    public List<Double> getValores() {
+        return valores;
+    }
 
     public DistribuicaoUniforme(double minimo, double maximo) {
         if (minimo >= maximo) {
