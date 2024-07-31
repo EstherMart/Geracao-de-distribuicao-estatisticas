@@ -1,18 +1,12 @@
-package com.calculadora;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 
 public class DistribuicaoUniforme extends Distribuicao {
     private double minimo;
     private double maximo;
     private List<Double> valores;
-
-    Random random = new Random();
-    public List<Double> getValores() {
-        return valores;
-    }
+    private Random random;
 
     public DistribuicaoUniforme(double minimo, double maximo) {
         if (minimo >= maximo) {
@@ -25,7 +19,7 @@ public class DistribuicaoUniforme extends Distribuicao {
     @Override
     public List<Double> gerarValores(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("O número de valores deve ser maior que -1");
+            throw new IllegalArgumentException("O número de valores deve ser maior que 0");
         }
         valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {

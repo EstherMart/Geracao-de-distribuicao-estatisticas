@@ -7,7 +7,7 @@ import java.util.Random;
 public class DistribuicaoPoisson extends Distribuicao {
     
     private double lambda;
-    private Random random = new Random();
+    private Random random;
     private List<Double> valores;
 
     public List<Double> getValores() {
@@ -17,7 +17,7 @@ public class DistribuicaoPoisson extends Distribuicao {
     // Construtor com validação para lambda
     public DistribuicaoPoisson(double lambda) {
         if (lambda <= 0) {
-            throw new IllegalArgumentException("O valor de lambda deve ser diferente de 0.");
+            throw new IllegalArgumentException("O valor de lambda deve ser maior que 0.");
         }
         this.lambda = lambda;
     }
@@ -43,6 +43,9 @@ public class DistribuicaoPoisson extends Distribuicao {
 
     @Override
     public List<Double> gerarValores(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("O número de valores deve ser maior ou igual a 0.");
+        }
         valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             valores.add((double) gerarPoisson(lambda));
@@ -60,5 +63,4 @@ public class DistribuicaoPoisson extends Distribuicao {
         } while (p > L);
         return k - 1;
     }
-    
 }
