@@ -40,7 +40,7 @@ mvn package
 ```
 
 ## Documentação dos requisitos do projeto
-[Documentação - AP1](https://github.com/EstherMart/Geracao-de-distribuicao-estatisticas/blob/main/2024%20CK%200235%20Avalia%C3%A7%C3%A3o%201.pdf)
+[Documentação - AP1](https://github.com/EstherMart/Geracao-de-distribuicao-estatisticas/blob/main2024%20CK%200235%20Avalia%C3%A7%C3%A3o%201.pdf)
 
 ## Requisitos Obrigatórios
 O projeto utiliza conceitos relacionados à Programação Orientada a Objetos em Java. Abaixo, é apresentado as principais definições utilizadas no código.
