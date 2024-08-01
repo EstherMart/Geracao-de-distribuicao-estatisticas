@@ -67,6 +67,6 @@ O código imprime cada valor da distribuição em uma lista de números, separad
 - Tratamento de entrada de exceção de entrada e saída de dados
 
 # Demonstração da aplicação
-<Vídeo>
+[Youtube](https://youtu.be/wakGBqog4UI)
 
 </p>
