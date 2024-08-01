@@ -16,12 +16,18 @@ public class DistribuicaoUniforme extends Distribuicao {
     }
 
     public DistribuicaoUniforme(double minimo, double maximo) {
+        if (minimo >= maximo) {
+            throw new IllegalArgumentException("O valor mínimo tem que ser menor que o valor máximo");
+        }
         this.minimo = minimo;
         this.maximo = maximo;
     }
 
     @Override
     public List<Double> gerarValores(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("O número de valores deve ser maior que 0");
+        }
         valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             valores.add(gerarValor());

@@ -19,6 +19,9 @@ public class DistribuicaoNormal extends Distribuicao {
     }
     
     public DistribuicaoNormal(double mediaAmostral, double varianciaAmostral) {
+        if (varianciaAmostral < 0) {
+            throw new IllegalArgumentException("Variancia amostral não pode ser negativa");
+        }
         this.mediaAmostral = mediaAmostral;
         desvioPadraoAmostral = Math.sqrt(varianciaAmostral);
     }
@@ -29,6 +32,9 @@ public class DistribuicaoNormal extends Distribuicao {
 
     @Override
     public List<Double> gerarValores(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Número de valores gerados não pode ser negativo");
+        }
         valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             valores.add(gerarValor());

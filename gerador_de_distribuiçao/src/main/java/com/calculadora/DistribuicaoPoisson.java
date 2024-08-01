@@ -43,6 +43,9 @@ public class DistribuicaoPoisson extends Distribuicao {
 
     @Override
     public List<Double> gerarValores(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("O número de valores deve ser maior ou igual a 0.");
+        }
         valores = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             valores.add((double) gerarPoisson(lambda));
