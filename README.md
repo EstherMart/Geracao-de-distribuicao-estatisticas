@@ -64,7 +64,8 @@ Classe padronizada disponibilizada pelo docente e que, obrigatoriamente, deve se
 O código imprime cada valor da distribuição em uma lista de números, separados por vírgula, como saída.
 
 ## Adicionais Implementados
-- Tratamento de entrada de exceção de entrada e saída de dados
+- Tratamento de exceção de entrada e saída de dados;
+- Interface
 
 # Demonstração da aplicação
 [Youtube](https://youtu.be/wakGBqog4UI)
