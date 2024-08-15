@@ -68,6 +68,6 @@ O código imprime cada valor da distribuição em uma lista de números, separad
 - Interface
 
 # Demonstração da aplicação
-[Youtube](https://youtu.be/wakGBqog4UI)
+[Youtube](https://youtu.be/WC4ZxDuUd0c)
 
 </p>
